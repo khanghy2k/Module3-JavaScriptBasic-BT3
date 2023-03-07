@@ -5,6 +5,40 @@
     <title>Title</title>
 </head>
 <body>
+<h1>Caculator</h1>
+<input type="number" id="first">
+<input type="number" id="two"><br>
+<button type="button" onclick="Addition()">Addition(+)</button>
+<button type="button" onclick="Subtraction()">Subtraction(-)</button>
+<button type="button" onclick=" Multiplication()">Multiplication(*)</button>
+<button type="button" onclick="Division()">Division(/)</button>
+<p id="result"></p>
+<script>
+function Addition() {
+    let first = +document.getElementById('first').value;
+    let two = +document.getElementById('two').value;
+    let sum = first + two;
+    document.getElementById('result').innerHTML='Addtion result: '+ sum ;
 
+}
+function Subtraction() {
+    let first = +document.getElementById('first').value;
+    let two = +document.getElementById('two').value;
+    let Sub = first - two ;
+    document.getElementById('result').innerHTML = 'Subtraction Result: '+ Sub ;
+}
+function Multiplication() {
+    let first = +document.getElementById('first').value;
+    let two = +document.getElementById('two').value;
+    let Mul=first * two ;
+    document.getElementById('result').innerHTML ='Multiplication Result: '+Mul;
+}
+function Division() {
+    let first = +document.getElementById('first').value;
+    let two = +document.getElementById('two').value;
+    let Div = first / two ;
+    document.getElementById('result').innerHTML='Division Result:  '+Div;
+}
+</script>
 </body>
 </html>
